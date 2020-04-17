@@ -6,8 +6,6 @@ import serial
 
 import time
 
-import re
-
 
 T = 10.0/0.1; # time interval
 
@@ -44,6 +42,8 @@ ax[0].plot(t, ACC_X, color="blue",  label="x")
 ax[0].plot(t, ACC_Y, color="red",   label="y")
 
 ax[0].plot(t, ACC_Z, color="green", label="z")
+
+ax[0].legend(loc='lower left')
 
 ax[0].set_xlabel('Time')
 
